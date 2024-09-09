@@ -35,7 +35,7 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel_close.setBorder(label_border);
 
         // Borde para la cuenta jlabel de creación
-        Border label_login_border = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.red);
+        Border label_login_border = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.lightGray);
         jLabel_Login.setBorder(label_login_border);
 
         // Borde para los campos de texto y contraseña
@@ -111,6 +111,14 @@ public class Register_Form extends javax.swing.JFrame {
 
         jLabel_Login.setForeground(new java.awt.Color(0, 204, 0));
         jLabel_Login.setText(">> ¿Ya tienes una cuenta? Iniciar sesión");
+        jLabel_Login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_LoginMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel_LoginMouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -331,6 +339,21 @@ public class Register_Form extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jButton_RegisterActionPerformed
+
+    private void jLabel_LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_LoginMouseClicked
+        // TODO add your handling code here:
+        vista.Login_Form lf = new vista.Login_Form();
+        lf.setVisible(true);
+        lf.pack();
+        lf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jLabel_LoginMouseClicked
+
+    private void jLabel_LoginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_LoginMouseEntered
+        // TODO add your handling code here:
+        Border label_border = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.red);
+        jLabel_Login.setBorder(label_border);
+    }//GEN-LAST:event_jLabel_LoginMouseEntered
 
     // Función para verificar los campos vacíos.
     public boolean verifyFields() {

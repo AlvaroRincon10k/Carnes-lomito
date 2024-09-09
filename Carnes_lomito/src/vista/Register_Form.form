@@ -247,6 +247,10 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="&gt;&gt; &#xbf;Ya tienes una cuenta? Iniciar sesi&#xf3;n"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel_LoginMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel_LoginMouseEntered"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
