@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class Conexion_DB {
 
-    private static String dbname = "usersjulio";
+    private static String dbname = "users_db";
     private static String username = "root";
     private static String password = "Alvaro3213634400";
 

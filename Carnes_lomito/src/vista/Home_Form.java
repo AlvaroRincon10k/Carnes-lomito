@@ -2,6 +2,7 @@
 package vista;
 
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 public class Home_Form extends javax.swing.JFrame {
 
@@ -125,24 +126,20 @@ public class Home_Form extends javax.swing.JFrame {
 
     private void jMenu_USUARIOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu_USUARIOMouseClicked
         // TODO add your handling code here:
-          /*   vista.Admin_Users_Form userForm = new vista.Admin_Users_Form();
+            vista.Admin_Users_Form userForm = new vista.Admin_Users_Form();
                 userForm.pack();
                 userForm.setVisible(true);
                 userForm.setLocationRelativeTo(null);
                 userForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        
-        */
-        
-        
     }//GEN-LAST:event_jMenu_USUARIOMouseClicked
 
     private void jMenu_USUARIOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu_USUARIOActionPerformed
         // TODO add your handling code here:
-         /* vista.Admin_Users_Form userForm = new vista.Admin_Users_Form();
+          vista.Admin_Users_Form userForm = new vista.Admin_Users_Form();
                 userForm.pack();
                 userForm.setVisible(true);
                 userForm.setLocationRelativeTo(null);
-                userForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);*/
+                userForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
     }//GEN-LAST:event_jMenu_USUARIOActionPerformed
 
